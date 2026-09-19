@@ -1,2 +1,5 @@
-# 2611500012-PWD-TI1A-2627O
- Repository Latihan Pertemuan-1 sampai dengan Pertemuan-16 Matakuliah Pemrograman Web Dasar Kelompok TI1A Tahun Ajaran 2026/2027 Semester Gasal
+# Pemrograman Web Dasar
+Nama: [Indra Heriansyah]
+NIM: [2611500012]
+Kelompok: [TI1A]
+Tahun Ajaran: 2026/2027 Gasal
