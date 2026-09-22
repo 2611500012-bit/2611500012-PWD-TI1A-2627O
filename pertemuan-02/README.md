@@ -11,7 +11,7 @@ elemen semantik, teks, daftar, tautan, dan gambar.
 ## Validasi HTML
 - Berkas yang divalidasi: `index.html`
 - Galat yang ditemukan: []
-- Perbaikan yang dilakukan: []
-- Hasil validasi akhir: []
+- Perbaikan yang dilakukan: [mengubah ukuran foto pada web]
+- Hasil validasi akhir: [pemrograman web foto profil]
 ## GitHub Pages
 URL: [ https://2611500012-bit.github.io/2611500012-PWD-TI1A-2627O/]
