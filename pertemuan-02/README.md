@@ -1,4 +1,3 @@
-# pertemuan-02
 # Pertemuan 2 - HTML5 Dasar dan Struktur Semantik
 ## Artefak
 - `taklengkap.html` - latihan error tolerance browser.
