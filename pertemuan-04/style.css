@@ -41,9 +41,14 @@ nav a {
     text-decoration: none;
 }
 
+nav a:hover,
+nav a:focus-visible {
+    text-decoration: underline;
+}
+
 main {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 16px;
 }
 
@@ -120,7 +125,6 @@ section {
     margin: 0;
     font-family: Arial, sans-serif;
     grid-column: 1 / -1;
-
 }
 
 #contact h2 {
@@ -163,6 +167,18 @@ section {
     padding: 8px 14px;
     margin: 8px 6px 0 0;
     border: 1px solid #003366;
+    cursor: pointer;
+}
+
+#contact button:hover,
+#contact button:focus-visible {
+    background-color: #004080;
+}
+
+.input-form:focus-visible,
+#contact input:focus-visible {
+    outline: 2px solid #1d4ed8;
+    outline-offset: 2px;
 }
 
 /* Footer */
