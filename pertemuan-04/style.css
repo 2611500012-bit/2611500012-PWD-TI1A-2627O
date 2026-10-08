@@ -11,7 +11,7 @@ body {
 }
 
 /* Header */
-. header {
+header {
     background-color: #003366;
     color: #ffffff;
     padding: 20px;
