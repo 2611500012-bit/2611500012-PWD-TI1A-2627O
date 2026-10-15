@@ -36,6 +36,13 @@ header h1 {
     border-radius: 4px;
     cursor: pointer;
     margin-bottom: 10px;
+    /* Animasi perputaran halus */
+    transition: transform 0.4s ease, color 0.3s ease;
+}
+
+/* Efek saat tombol aktif/menu terbuka (berputar 180 derajat) */
+#navToggle.active {
+    transform: rotate(180deg);
 }
 
 /* Navigasi Desktop (Rata Kiri, Mendatar) */
@@ -164,7 +171,7 @@ section {
 
 .input-form {
     width: 100%;
-    max-width: 480px;
+    max-width: 100%;
     background-color: #ffffff;
     color: #111827;
     font-family: Arial, sans-serif;
