@@ -66,12 +66,11 @@ switch ($programStudi) {
     </header>
 
     <main>
-            <section id="home">
-    <h2>Selamat Datang</h2>
-    <p>Halo, saya <strong><?php echo $namaMahasiswa; ?></strong>. Saya sedang mempelajari matakuliah <strong><?php print NAMA_MATA_KULIAH; ?></strong> pada tahun akademik <?php echo $tahunAkademik; ?>.</p>
-    <img src="img/foto-profil.jpeg" alt="Foto Profil Indra Heriansyah" />
-</section>
-        
+        <section id="home">
+            <h2>Selamat Datang</h2>
+            <p>Halo, saya <strong><?php echo $namaMahasiswa; ?></strong>. Saya sedang mempelajari matakuliah <strong><?php print NAMA_MATA_KULIAH; ?></strong> pada tahun akademik <?php echo $tahunAkademik; ?>.</p>
+            <img src="img/foto-profil.jpeg" alt="Foto Profil Indra Heriansyah" />
+        </section>
 
         <section id="about">
             <h2>Tentang Saya</h2>
@@ -83,6 +82,7 @@ switch ($programStudi) {
             <p>Sisa semester hingga batas: <?php echo $sisaSemester; ?></p>
             <p>Pemeriksaan rentang semester: <?php echo $statusSemester; ?></p>
             <p>Saya mahasiswa Program Studi Teknik Informatika.</p>
+
             <h3>Target Belajar (Perulangan for)</h3>
             <ol>
             <?php
@@ -125,17 +125,14 @@ switch ($programStudi) {
 
         <section id="contact">
             <h2>Kontak Saya</h2>
+
             <p>
-        Kunjungi <a target="_blank" href="https://github.com/2611500012-bit/<?= PROFIL_GITHUB ?>">profil GitHub saya</a>.
-    </p>
+                Kunjungi <a target="_blank" href="https://github.com/<?= PROFIL_GITHUB ?>">profil GitHub saya</a>.
+            </p>
 
-    <div id="formFeedback"></div>
-
-    <form id="contactForm" action="index.php" novalidate>
-           
             <div id="formFeedback"></div>
 
-            <form id="contactForm" action="index.php" novalidate>
+            <form id="contactForm" action="index.php" method="get" novalidate>
                 <div class="form-group">
                     <label for="nama">Nama Lengkap:</label><br />
                     <input type="text" id="nama" name="nama" class="input-form" />
@@ -193,7 +190,7 @@ switch ($programStudi) {
     </main>
 
     <footer>
-        <p>&copy; 2026 Indra Heriansyah - [2611500012]</p>
+        <p>&copy; <?= date("Y") ?> <?php echo $namaMahasiswa; ?> [<?= $nim ?>]</p>
     </footer>
 
     <script src="script.js"></script>
