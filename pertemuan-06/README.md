@@ -1,10 +1,8 @@
 # Dokumentasi Pertemuan 6 (P6) - Pemrograman Web Dasar
 
-**Nama:** [Indra Heriansyah]  
-**NIM:** [2611500012]  
-**Kelas:** [TI1A]  
-
----
+Nama: [Indra Heriansyah]  
+NIM:[2611500012]  
+Kelas:[TI1A]  
 
 # Persiapan Pengembangan P6
 
@@ -26,3 +24,11 @@
 - Hasil Pengujian Akses
   - Halaman `index.php` berhasil diproses oleh peladen Apache dan dibuka melalui peramban tanpa adanya galat (*error*).
   - Tampilan visual, gaya CSS, interaksi JavaScript, serta struktur navigasi dari baseline P5 tetap berfungsi dan dipertahankan dengan baik.
+
+  ## C. Dasar PHP dan Integrasi dengan HTML
+
+### C.1 - C.3 Pengujian Tag PHP, Komentar, Echo, dan Print
+- **Pengujian Tag PHP (`<?php ?>`):** Kode PHP berhasil diproses oleh peladen Apache. Saat diperiksa via View Page Source (`Ctrl + U`), kode sumber PHP mentah dan komentar tidak dikirimkan ke peramban.
+- Pengujian `echo` vs `print`:
+  - `echo` digunakan untuk mencetak keluaran teks secara langsung.
+  - `print` juga berhasil mencetak keluaran teks pada halaman.
