@@ -1,6 +1,14 @@
 <?php
-echo "Konten HTML Statis.<br>";
-print "Konte yang di hasilkan oleh php.";
+$nim = "2611500012";
+$namaMahasiswa = "Indra Heriansyah";
+$programStudi = "TI";
+$tahunAkademik = "2026/2027";
+$semester = 1;
+$statusAktif = true;
+$catatanTambahan = null;
+
+const NAMA_MATA_KULIAH = "Pemrograman Web Dasar";
+const PROFIL_GITHUB = "indra12";
 ?>
 <!DOCTYPE html>
 <html lang="id">
@@ -25,11 +33,12 @@ print "Konte yang di hasilkan oleh php.";
     </header>
 
     <main>
-        <section id="home">
-            <h2>Selamat Datang</h2>
-            <p>Halo, saya Indra Heriansyah. Saya sedang mempelajari Pemrograman Web Dasar.</p>
-            <img src="img/foto-profil.jpeg" alt="Foto Profil Indra Heriansyah" />
-        </section>
+            <section id="home">
+    <h2>Selamat Datang</h2>
+    <p>Halo, saya <strong><?php echo $namaMahasiswa; ?></strong>. Saya sedang mempelajari matakuliah <strong><?php print NAMA_MATA_KULIAH; ?></strong> pada tahun akademik <?php echo $tahunAkademik; ?>.</p>
+    <img src="img/foto-profil.jpeg" alt="Foto Profil Indra Heriansyah" />
+</section>
+        
 
         <section id="about">
             <h2>Tentang Saya</h2>
@@ -45,7 +54,14 @@ print "Konte yang di hasilkan oleh php.";
 
         <section id="contact">
             <h2>Kontak Saya</h2>
+            <p>
+        Kunjungi <a target="_blank" href="https://github.com/2611500012-bit/<?= PROFIL_GITHUB ?>">profil GitHub saya</a>.
+    </p>
 
+    <div id="formFeedback"></div>
+
+    <form id="contactForm" action="index.php" novalidate>
+           
             <div id="formFeedback"></div>
 
             <form id="contactForm" action="index.php" novalidate>
