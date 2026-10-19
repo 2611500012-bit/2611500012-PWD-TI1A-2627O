@@ -53,3 +53,10 @@ Kelas:[TI1A]
 
 ### F.3 Percabangan `switch-case-default`
 - Menentukan fokus program studi berdasarkan nilai `$programStudi`.
+## G. Perulangan PHP
+
+### G.1 Perulangan `for`
+- Menampilkan 5 butir daftar target belajar menggunakan perulangan `for` dan percabangan `switch-case` di dalamnya.
+
+### G.2 Perulangan `while`
+- Menampilkan daftar nomor semester (Semester 1 hingga 3) menggunakan perulangan `while` dengan operator penugasan inkremen `$nomorSemester++`.
