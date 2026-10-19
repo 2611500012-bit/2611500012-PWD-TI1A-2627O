@@ -10,8 +10,7 @@ $statusAktif = true;
 $catatanTambahan = null;
 
 const NAMA_MATA_KULIAH = "Pemrograman Web Dasar";
-const PROFIL_GITHUB = "indra12";
-
+const PROFIL_GITHUB = "2611500012-bit";
 // Bagian 2: Operator
 $batasSemester = 8;
 $sisaSemester = $batasSemester - $semester;
@@ -127,8 +126,8 @@ switch ($programStudi) {
             <h2>Kontak Saya</h2>
 
             <p>
-                Kunjungi <a target="_blank" href="https://github.com/2611500012-bit<?= PROFIL_GITHUB ?>">profil GitHub saya</a>.
-            </p>
+    Kunjungi <a target="_blank" href="https://github.com/<?= PROFIL_GITHUB ?>">profil GitHub saya</a>.
+</p>
 
             <div id="formFeedback"></div>
 
