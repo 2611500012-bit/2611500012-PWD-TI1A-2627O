@@ -1,3 +1,7 @@
+<?php
+echo "Konten HTML Statis.<br>";
+print "Konte yang di hasilkan oleh php.";
+?>
 <!DOCTYPE html>
 <html lang="id">
 
@@ -44,7 +48,7 @@
 
             <div id="formFeedback"></div>
 
-            <form id="contactForm" novalidate>
+            <form id="contactForm" action="index.php" novalidate>
                 <div class="form-group">
                     <label for="nama">Nama Lengkap:</label><br />
                     <input type="text" id="nama" name="nama" class="input-form" />
