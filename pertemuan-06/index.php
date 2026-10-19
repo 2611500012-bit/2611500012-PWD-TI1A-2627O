@@ -1,4 +1,6 @@
 <?php
+// P6: PHP dasar dan pemrograman sisi peladen
+// Bagian 1: Variabel dan konstanta
 $nim = "2611500012";
 $namaMahasiswa = "Indra Heriansyah";
 $programStudi = "TI";
@@ -9,6 +11,37 @@ $catatanTambahan = null;
 
 const NAMA_MATA_KULIAH = "Pemrograman Web Dasar";
 const PROFIL_GITHUB = "indra12";
+
+// Bagian 2: Operator
+$batasSemester = 8;
+$sisaSemester = $batasSemester - $semester;
+$semesterValid = ($semester >= 1 && $semester <= $batasSemester);
+$statusSemester = ($semesterValid && $statusAktif) ? "Sesuai rentang" : "Perlu diperiksa";
+
+// Bagian 3: Percabangan if-elseif-else
+if ($semester < 3) {
+    $keteranganSemester = "Semester awal";
+} elseif ($semester <= 6) {
+    $keteranganSemester = "Semester menengah";
+} else {
+    $keteranganSemester = "Semester akhir";
+}
+
+// Bagian 4: Operator Ternary
+$namaProdi = ($programStudi == "SI") ? "Sistem Informasi" : (($programStudi == "TI") ? "Teknik Informatika" : "Lainnya");
+
+// Bagian 5: Percabangan switch-case-default
+switch ($programStudi) {
+    case "SI":
+        $fokusProgramStudi = "Sistem informasi dan proses bisnis";
+        break;
+    case "TI":
+        $fokusProgramStudi = "Komputasi dan pengembangan perangkat lunak";
+        break;
+    default:
+        $fokusProgramStudi = "Belum ditentukan";
+        break;
+}
 ?>
 <!DOCTYPE html>
 <html lang="id">
@@ -43,6 +76,12 @@ const PROFIL_GITHUB = "indra12";
         <section id="about">
             <h2>Tentang Saya</h2>
             <h3>Profil Singkat</h3>
+            <p>Program Studi: <?php echo $namaProdi . " (" . $programStudi . ")"; ?></p>
+            <p>Fokus program studi: <?php echo $fokusProgramStudi; ?></p>
+            <p>Status mahasiswa: <?php echo $statusAktif ? "Aktif" : "Tidak aktif"; ?></p>
+            <p>Semester: <?php echo $semester . " (" . $keteranganSemester . ")"; ?></p>
+            <p>Sisa semester hingga batas: <?php echo $sisaSemester; ?></p>
+            <p>Pemeriksaan rentang semester: <?php echo $statusSemester; ?></p>
             <p>Saya mahasiswa Program Studi Teknik Informatika.</p>
             <h3>Target Belajar</h3>
             <ol>

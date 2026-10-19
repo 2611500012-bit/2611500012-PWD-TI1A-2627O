@@ -42,3 +42,14 @@ Kelas:[TI1A]
 ### D.4 Penggunaan Variabel dan Konstanta
 - Menampilkan data nama mahasiswa, mata kuliah, dan tahun akademik secara dinamis pada bagian Beranda.
 - Menggunakan sintaks singkat `<?= PROFIL_GITHUB ?>` untuk membentuk tautan URL profil GitHub.
+
+## F. Struktur Percabangan PHP
+
+### F.1 Percabangan `if-elseif-else`
+- Menentukan kategori semester (`"Semester awal"`).
+
+### F.2 Operator Ternary
+- Menentukan nama lengkap program studi dan teks status keaktifan mahasiswa.
+
+### F.3 Percabangan `switch-case-default`
+- Menentukan fokus program studi berdasarkan nilai `$programStudi`.
