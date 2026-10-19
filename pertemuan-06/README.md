@@ -1,26 +1,28 @@
-# P5 - JavaScript Dasar, DOM, Event, dan Validasi Sisi Klien
+# Dokumentasi Pertemuan 6 (P6) - Pemrograman Web Dasar
 
-## Deskripsi
-Dokumentasi pengembangan halaman web pada P5, meliputi JavaScript, DOM, event listener, interaksi navigasi, dan validasi formulir sisi klien
+**Nama:** [Indra Heriansyah]  
+**NIM:** [2611500012]  
+**Kelas:** [TI1A]  
 
-## Fitur dan Pengembangan
-- Baseline P5: Menyalin artefak dari P4 ke direktori pertemuan-05/.
-- Menghubungkan JS: Menghubungkan script.js eksternal ke index.html.
-- Navigasi Responsif: Menambahkan event click pada tombol hamburger menu.
-- Validasi Formulir: Mengendalikan event submit dan melakukan pengecekan data masukan.
-- Umpan Balik: Menghapus pesan kesalahan menggunakan event reset dan input.
+---
 
-## Pengujian
-- Interaksi Navigasi: Menu berhasil dibuka dan ditutup saat tombol diklik.
-- Validasi Formulir: Pesan kesalahan muncul sesuai aturan jika data tidak lengkap/salah.
-- Form Berhasil: Pesan keberhasilan muncul jika seluruh data valid.
-- DevTools: Tidak ditemukan galat pada tab Console.
+# Persiapan Pengembangan P6
 
-## Riwayat Pengembangan
-- Siapkan baseline P5 dari artefak P4
-- Hubungkan JavaScript eksternal ke HTML
-- Tambahkan penanganan event click
-- Tambahkan penanganan event submit
-- Tambahkan penanganan event reset
-- Perbaiki ID elemen HTML dan sesuaikan script.js sesuai modul P5
-- Selesaikan pengujian dan perbaikan P5
+# Verifikasi Baseline P5 dan Lingkungan Kerja
+- Lokasi Proyek: C:\laragon\www\pwd\2627o\ti1a\2611500012-PWD-TI1A-2627O\pertemuan-06
+- Layanan Peladen Lokal (Laragon)
+  - Apache: Berjalan pada Port 80 / 443
+  - MySQL: Berjalan pada Port 3306
+
+- **Verifikasi Berkas Baseline P5:**
+  - `img/foto-profil.jpg` (Tersedia)
+  - `style.css` (Tersedia)
+  - `script.js` (Tersedia)
+  - `index.html` (Telah diubah namanya menjadi `index.php`)
+
+### Hasil Verifikasi Akses Localhost
+- Alamat URL Akses: https://localhost/pwd/2627o/ti1a/2611500012-PWD-TI1A-2627O/pertemuan-06/.
+
+- Hasil Pengujian Akses
+  - Halaman `index.php` berhasil diproses oleh peladen Apache dan dibuka melalui peramban tanpa adanya galat (*error*).
+  - Tampilan visual, gaya CSS, interaksi JavaScript, serta struktur navigasi dari baseline P5 tetap berfungsi dan dipertahankan dengan baik.
