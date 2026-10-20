@@ -1,6 +1,5 @@
 <?php
-// P6: PHP dasar dan pemrograman sisi peladen
-// Bagian 1: Variabel dan konstanta
+
 $nim = "2611500012";
 $namaMahasiswa = "Indra Heriansyah";
 $programStudi = "TI";
@@ -126,7 +125,7 @@ switch ($programStudi) {
             <h2>Kontak Saya</h2>
 
             <p>
-    Kunjungi <a target="_blank" href="https://github.com/<?= PROFIL_GITHUB ?>">profil GitHub saya</a>.
+    Kunjungi <a target="_blank" href="https://github.com/2611500012-bit<?= PROFIL_GITHUB ?>">profil GitHub saya</a>.
 </p>
 
             <div id="formFeedback"></div>
