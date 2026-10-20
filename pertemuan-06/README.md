@@ -60,3 +60,23 @@ Kelas:[TI1A]
 
 ### G.2 Perulangan `while`
 - Menampilkan daftar nomor semester (Semester 1 hingga 3) menggunakan perulangan `while` dengan operator penugasan inkremen `$nomorSemester++`.
+
+## H. Fungsi Bawaan PHP dan Sintaks Keluaran
+
+### H.3 Menampilkan Tahun dengan Fungsi `date()`
+- Menampilkan tahun berjalan secara dinamis pada bagian *footer* menggunakan fungsi `date("Y")`.
+
+### H.4 Sintaks Keluaran Singkat `<?= ?>`
+- Menggunakan sintaks singkat `<?= ?>` untuk mencetak nilai konstanta `PROFIL_GITHUB`, tahun `date("Y")`, dan variabel `$nim` secara langsung pada struktur HTML.
+
+---
+
+## I. Penyesuaian Atribut Action pada Formulir
+
+- Mengubah atribut `action` pada elemen `<form id="contactForm">` menjadi `index.php` agar tujuan pengiriman formulir sesuai dengan nama halaman utama Pertemuan 6.
+
+---
+
+## J. Kesimpulan Pengujian Akhir
+- Seluruh materi dasar PHP (variabel, konstanta, tipe data, operator, percabangan, perulangan, dan fungsi bawaan) telah berhasil dimuat pada peladen lokal Apache (`localhost`) tanpa terjadi galat.
+- Seluruh perkembangan kode telah direkam secara bertahap menggunakan Git dan diunggah ke repositori GitHub.
