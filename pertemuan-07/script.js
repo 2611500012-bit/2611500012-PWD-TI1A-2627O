@@ -1,11 +1,11 @@
-const navToggle = document.getElementById("navToggle");
+﻿const navToggle = document.getElementById("navToggle");
 const navMenu = document.getElementById("navMenu");
 
 navToggle.addEventListener("click", () => {
     const isOpen = navMenu.classList.toggle("nav-open");
 
     navToggle.classList.toggle("active", isOpen);
-    navToggle.textContent = isOpen ? "▼" : "☰";
+    navToggle.textContent = isOpen ? "\u25bc" : "\u2630";
     navToggle.setAttribute("aria-expanded", isOpen);
 
     if (isOpen) {

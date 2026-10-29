@@ -1,4 +1,4 @@
-* {
+﻿* {
     box-sizing: border-box;
 }
 
@@ -278,4 +278,13 @@ footer p {
         gap: 10px;
         padding-top: 8px;
     }
+}
+.header-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-top h1 {
+    margin: 0;
 }
