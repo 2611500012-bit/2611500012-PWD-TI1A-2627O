@@ -18,21 +18,16 @@ Menerapkan pengiriman formulir dengan metode POST, validasi JavaScript dan PHP, 
 
 ## Cara Menjalankan
 
-Dari folder ini jalankan:
-
-```sh
-php -S localhost:8000
-```
-
-Buka `http://localhost:8000` di browser.
+Nyalakan Apache melalui Laragon, lalu buka:
+`http://localhost/pwd/2627o/ti1a/2611500012-PWD-TI1A-2627O/pertemuan-07/`
 
 ## Hasil Pengujian
 
-- `php -l index.php` — lulus, tidak ada kesalahan sintaks.
+- `php -l index.php` — lulus, tidak ada kesalahan sintaks (PHP 8.3).
 - `node --check script.js` — lulus, tidak ada kesalahan sintaks.
-- Uji POST valid melalui server PHP lokal — menerima redirect HTTP 302 dan menampilkan ringkasan data setelah GET.
-- Uji POST tidak valid — menerima redirect, menampilkan umpan balik kesalahan, dan tidak menampilkan ringkasan sebagai data berhasil.
-- Uji masukan HTML — nilai dipertahankan dengan aman setelah redirect dan karakter HTML di-escape.
+- Uji GET melalui server PHP lokal — menerima HTTP 200.
+- Uji POST valid — redirect dan menampilkan status berhasil serta ringkasan.
+- Uji masukan HTML — karakter HTML di-escape saat ditampilkan kembali.
 
 ## Catatan Git
 
