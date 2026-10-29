@@ -1,5 +1,11 @@
 <?php
+// P7: penggunaan GET (Tambahkan bagian ini di paling atas)
+if (isset($_GET['nama'])) {
+    $nama = $_GET['nama'];
+    echo "Nama yang diterima: " . htmlspecialchars($nama, ENT_QUOTES, 'UTF-8');
+}
 
+// Baseline data mahasiswa
 $nim = "2611500012";
 $namaMahasiswa = "Indra Heriansyah";
 $programStudi = "TI";
@@ -10,7 +16,8 @@ $catatanTambahan = null;
 
 const NAMA_MATA_KULIAH = "Pemrograman Web Dasar";
 const PROFIL_GITHUB = "2611500012-bit";
-// Bagian 2: Operator
+
+// Bagian 2: Operator (Diperbaiki syntax error-nya)
 $batasSemester = 8;
 $sisaSemester = $batasSemester - $semester;
 $semesterValid = ($semester >= 1 && $semester <= $batasSemester);
@@ -41,6 +48,7 @@ switch ($programStudi) {
         break;
 }
 ?>
+
 <!DOCTYPE html>
 <html lang="id">
 
@@ -84,7 +92,6 @@ switch ($programStudi) {
             <h3>Target Belajar (Perulangan for)</h3>
             <ol>
             <?php
-            // Perulangan for tanpa array
             for ($i = 1; $i <= 5; $i++) {
                 echo "<li>Target belajar ke-" . $i . ": ";
                 switch ($i) {
@@ -125,12 +132,12 @@ switch ($programStudi) {
             <h2>Kontak Saya</h2>
 
             <p>
-    Kunjungi <a target="_blank" href="https://github.com/2611500012-bit<?= PROFIL_GITHUB ?>">profil GitHub saya</a>.
-</p>
+                Kunjungi <a target="_blank" href="https://github.com/<?= PROFIL_GITHUB ?>">profil GitHub saya</a>.
+            </p>
 
             <div id="formFeedback"></div>
 
-            <form id="contactForm" action="index.php" method="get" novalidate>
+          <form id="contactForm" action="index.php" method="post" novalidate>
                 <div class="form-group">
                     <label for="nama">Nama Lengkap:</label><br />
                     <input type="text" id="nama" name="nama" class="input-form" />
@@ -160,12 +167,12 @@ switch ($programStudi) {
                 </div>
 
                 <div class="form-group">
-                    <label>Topik Minat:</label><br />
-                    <input type="checkbox" id="web" name="minat" value="web" />
-                    <label for="web">HTML</label>
-                    <input type="checkbox" id="design" name="minat" value="design" />
-                    <label for="design">CSS</label>
-                </div>
+    <label>Topik Minat:</label><br />
+    <input type="checkbox" id="web" name="minat[]" value="web" />
+    <label for="web">HTML</label>
+    <input type="checkbox" id="design" name="minat[]" value="design" />
+    <label for="design">CSS</label>
+</div>
 
                 <div class="form-group">
                     <label for="prodi">Program Studi:</label><br />

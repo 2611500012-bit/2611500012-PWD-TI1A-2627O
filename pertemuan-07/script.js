@@ -14,6 +14,7 @@ navToggle.addEventListener("click", () => {
         navToggle.setAttribute("aria-label", "Buka navigasi");
     }
 });
+
 const contactForm = document.getElementById("contactForm");
 const formFeedback = document.getElementById("formFeedback");
 const namaInput = document.getElementById("nama");
@@ -58,7 +59,8 @@ contactForm.addEventListener("submit", (event) => {
         return;
     }
 
-    const topikDipilih = document.querySelectorAll('input[name="minat"]:checked');
+    // Mendukung name="minat" (GET) dan name="minat[]" (POST)
+    const topikDipilih = document.querySelectorAll('input[name="minat"]:checked, input[name="minat[]"]:checked');
     if (topikDipilih.length === 0) {
         formFeedback.textContent = "Pilih minimal satu topik yang diminati.";
         return;
@@ -81,8 +83,10 @@ contactForm.addEventListener("submit", (event) => {
         return;
     }
 
+    // Menampilkan umpan balik sukses lalu meneruskan pengiriman formulir
     formFeedback.textContent = "Form berhasil divalidasi.";
     formFeedback.className = "form-feedback-success";
+    contactForm.submit();
 });
 
 contactForm.addEventListener("reset", () => {
