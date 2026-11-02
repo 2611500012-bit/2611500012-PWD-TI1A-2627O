@@ -1,35 +1,35 @@
 <?php
 session_start();
 
-// P7: Memproses data formulir dan menyimpannya ke dalam session.
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
-	$nama = trim((string) ($_POST["nama"] ?? ""));
-	$email = trim((string) ($_POST["email"] ?? ""));
-	$semesterForm = trim((string) ($_POST["semester"] ?? ""));
-	$tanggal = trim((string) ($_POST["tanggal"] ?? ""));
-	$jenisPesan = trim((string) ($_POST["jenis_pesan"] ?? ""));
-	$minat = $_POST["minat"] ?? [];
-	$prodi = trim((string) ($_POST["prodi"] ?? ""));
-	$pesan = trim((string) ($_POST["pesan"] ?? ""));
+    $formType = $_POST["form_type"] ?? "contact";
 
-	// Checkbox dapat mengirimkan lebih dari satu nilai.
-	if (!is_array($minat)) {
-		$minat = [];
-	}
+    if ($formType === "kegiatan") {
+        $_SESSION["kegiatan_nama"] = trim((string) ($_POST["nama_kegiatan"] ?? ""));
+        $_SESSION["kegiatan_kategori"] = trim((string) ($_POST["kategori_kegiatan"] ?? ""));
+        $_SESSION["kegiatan_tanggal"] = trim((string) ($_POST["tgl_pelaksanaan"] ?? ""));
+        $_SESSION["kegiatan_lokasi"] = trim((string) ($_POST["lokasi_kegiatan"] ?? ""));
+        $_SESSION["kegiatan_deskripsi"] = trim((string) ($_POST["deskripsi_kegiatan"] ?? ""));
 
-	// Menyimpan setiap nilai formulir ke dalam session secara terpisah.
-	$_SESSION["nama"] = $nama;
-	$_SESSION["email"] = $email;
-	$_SESSION["semester"] = $semesterForm;
-	$_SESSION["tanggal"] = $tanggal;
-	$_SESSION["jenis_pesan"] = $jenisPesan;
-	$_SESSION["minat"] = $minat;
-	$_SESSION["prodi"] = $prodi;
-	$_SESSION["pesan"] = $pesan;
+        // PRG: Redirect ke section kegiatan
+        header("Location: index.php#kegiatan");
+        exit;
+    } 
+    
+    else {
+        $_SESSION["nama"] = trim((string) ($_POST["nama"] ?? ""));
+        $_SESSION["email"] = trim((string) ($_POST["email"] ?? ""));
+        $_SESSION["semester"] = trim((string) ($_POST["semester"] ?? ""));
+        $_SESSION["tanggal"] = trim((string) ($_POST["tanggal"] ?? ""));
+        $_SESSION["jenis_pesan"] = trim((string) ($_POST["jenis_pesan"] ?? ""));
+        $_SESSION["minat"] = is_array($_POST["minat"] ?? null) ? $_POST["minat"] : [];
+        $_SESSION["prodi"] = trim((string) ($_POST["prodi"] ?? ""));
+        $_SESSION["pesan"] = trim((string) ($_POST["pesan"] ?? ""));
 
-	// PRG: mencegah pengiriman POST berulang ketika halaman dimuat ulang.
-	header("Location: index.php#contact");
-	exit;
+        // PRG: Redirect ke section contact
+        header("Location: index.php#contact");
+        exit;
+    }
 }
 
 // Mengamankan data sebelum ditampilkan kembali ke halaman HTML.
