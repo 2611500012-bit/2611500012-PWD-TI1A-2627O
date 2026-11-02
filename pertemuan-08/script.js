@@ -13,9 +13,7 @@ if (navToggle && navMenu) {
   });
 }
 
-// Validasi formulir Kontak.
-// Selector menggunakan atribut/class, bukan ID formulir tertentu,
-// sehingga formulir lain dapat ditambahkan dengan ID yang berbeda.
+
 const contactForms = document.querySelectorAll(
   'form[data-validation="contact"]',
 );
@@ -26,7 +24,7 @@ contactForms.forEach((contactForm) => {
   const ambilInput = (nama) => contactForm.elements.namedItem(nama);
 
   contactForm.addEventListener("submit", (event) => {
-    // Mencegah pengiriman otomatis sebelum seluruh validasi selesai.
+
     event.preventDefault();
 
     const namaInput = ambilInput("nama");
@@ -107,8 +105,7 @@ contactForms.forEach((contactForm) => {
       return;
     }
 
-    // Mengirim formulir setelah seluruh validasi JavaScript berhasil.
-    // HTMLFormElement.submit() tidak memicu event submit kembali.
+
     contactForm.submit();
   });
 
@@ -126,3 +123,24 @@ contactForms.forEach((contactForm) => {
     }
   });
 });
+
+const kegiatanForm = document.getElementById("kegiatanForm");
+
+if (kegiatanForm) {
+  kegiatanForm.addEventListener("submit", function (event) {
+    const nama = document.getElementById("nama_kegiatan").value.trim();
+    const kategori = document.getElementById("kategori_kegiatan").value;
+    const tanggal = document.getElementById("tgl_pelaksanaan").value;
+    const lokasi = document.getElementById("lokasi_kegiatan").value.trim();
+    const deskripsi = document.getElementById("deskripsi_kegiatan").value.trim();
+    const feedback = kegiatanForm.querySelector("[data-form-feedback]");
+
+    if (!nama || !kategori || !tanggal || !lokasi || !deskripsi) {
+      event.preventDefault();
+      if (feedback) {
+        feedback.textContent = "Harap isi semua bidang formulir rencana kegiatan dengan benar!";
+        feedback.style.color = "red";
+      }
+    }
+  });
+}
