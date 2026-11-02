@@ -124,6 +124,7 @@ contactForms.forEach((contactForm) => {
   });
 });
 
+// Validasi Formulir Rencana Kegiatan Mahasiswa
 const kegiatanForm = document.getElementById("kegiatanForm");
 
 if (kegiatanForm) {
