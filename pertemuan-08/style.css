@@ -217,7 +217,56 @@ footer p {
   color: #2e7d32;
 }
 
-/* Layout untuk viewport yang lebih lebar */
+#kegiatan {
+  background-color: #f8fafc;
+  border: 1px solid #cbd5e1;
+  padding: 20px;
+  margin: 0;
+}
+
+#kegiatan h2 {
+  color: #003366;
+  border-bottom: 2px solid #003366;
+  padding-bottom: 6px;
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+#kegiatan label {
+  color: #1f2937;
+  font-weight: bold;
+}
+
+#kegiatan input[type="text"],
+#kegiatan input[type="date"],
+#kegiatan select,
+#kegiatan textarea {
+  width: 100%;
+  max-width: 100%;
+  background-color: #ffffff;
+  color: #111827;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  padding: 8px;
+  margin: 4px 0;
+  border: 1px solid #94a3b8;
+}
+
+#kegiatan textarea {
+  min-height: 80px;
+  resize: vertical;
+}
+
+#kegiatan button {
+  background-color: #003366;
+  color: #ffffff;
+  font-weight: bold;
+  padding: 8px 14px;
+  margin: 8px 6px 0 0;
+  border: 1px solid #003366;
+  cursor: pointer;
+}
+
 @media (min-width: 768px) {
   nav {
     margin-top: 16px;
@@ -234,6 +283,7 @@ footer p {
     grid-template-columns: 1fr 1fr;
   }
 
+  #kegiatan,
   #contact {
     grid-column: 1 / -1;
   }

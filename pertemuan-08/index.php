@@ -186,6 +186,7 @@ switch ($programStudi) {
                         id="nama_kegiatan"
                         name="nama_kegiatan"
                         placeholder="Masukkan nama kegiatan"
+                        style="width: 100%; box-sizing: border-box;"
                         minlength="3"
                         maxlength="100"
                         required />
@@ -193,7 +194,7 @@ switch ($programStudi) {
 
                 <div class="form-group">
                     <label for="kategori_kegiatan">Kategori Kegiatan</label><br />
-                    <select class="input-form" id="kategori_kegiatan" name="kategori_kegiatan" required>
+                    <select class="input-form" id="kategori_kegiatan" name="kategori_kegiatan" style="width: 100%; box-sizing: border-box;" required>
                         <option value="">-- Pilih Kategori --</option>
                         <option value="Akademik">Akademik</option>
                         <option value="Non-Akademik">Non-Akademik</option>
@@ -204,7 +205,7 @@ switch ($programStudi) {
 
                 <div class="form-group">
                     <label for="tgl_pelaksanaan">Tanggal Pelaksanaan</label><br />
-                    <input class="input-form" type="date" id="tgl_pelaksanaan" name="tgl_pelaksanaan" required />
+                    <input class="input-form" type="date" id="tgl_pelaksanaan" name="tgl_pelaksanaan" style="width: 100%; box-sizing: border-box;" required />
                 </div>
 
                 <div class="form-group">
@@ -215,6 +216,7 @@ switch ($programStudi) {
                         id="lokasi_kegiatan"
                         name="lokasi_kegiatan"
                         placeholder="Masukkan lokasi kegiatan"
+                        style="width: 100%; box-sizing: border-box;"
                         required />
                 </div>
 
@@ -226,6 +228,7 @@ switch ($programStudi) {
                         name="deskripsi_kegiatan"
                         rows="4"
                         placeholder="Tulis deskripsi ringkas kegiatan"
+                        style="width: 100%; box-sizing: border-box;"
                         required></textarea>
                 </div>
 
