@@ -174,7 +174,77 @@ switch ($programStudi) {
 				</ol>
 			</article>
 		</section>
+<section id="kegiatan">
+            <h2>Rencana Kegiatan Mahasiswa</h2>
 
+            <form id="kegiatanForm" class="js-kegiatan-form" data-validation="kegiatan" action="index.php" method="post" novalidate>
+                <div class="form-group">
+                    <label for="nama_kegiatan">Nama Kegiatan</label><br />
+                    <input
+                        class="input-form"
+                        type="text"
+                        id="nama_kegiatan"
+                        name="nama_kegiatan"
+                        placeholder="Masukkan nama kegiatan"
+                        minlength="3"
+                        maxlength="100"
+                        required />
+                </div>
+
+                <div class="form-group">
+                    <label for="kategori_kegiatan">Kategori Kegiatan</label><br />
+                    <select class="input-form" id="kategori_kegiatan" name="kategori_kegiatan" required>
+                        <option value="">-- Pilih Kategori --</option>
+                        <option value="Akademik">Akademik</option>
+                        <option value="Non-Akademik">Non-Akademik</option>
+                        <option value="Organisasi">Organisasi</option>
+                        <option value="Pelatihan/Workshop">Pelatihan / Workshop</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="tgl_pelaksanaan">Tanggal Pelaksanaan</label><br />
+                    <input class="input-form" type="date" id="tgl_pelaksanaan" name="tgl_pelaksanaan" required />
+                </div>
+
+                <div class="form-group">
+                    <label for="lokasi_kegiatan">Lokasi Kegiatan</label><br />
+                    <input
+                        class="input-form"
+                        type="text"
+                        id="lokasi_kegiatan"
+                        name="lokasi_kegiatan"
+                        placeholder="Masukkan lokasi kegiatan"
+                        required />
+                </div>
+
+                <div class="form-group">
+                    <label for="deskripsi_kegiatan">Deskripsi Kegiatan</label><br />
+                    <textarea
+                        class="input-form"
+                        id="deskripsi_kegiatan"
+                        name="deskripsi_kegiatan"
+                        rows="4"
+                        placeholder="Tulis deskripsi ringkas kegiatan"
+                        required></textarea>
+                </div>
+
+                <button type="submit" name="form_type" value="kegiatan">Kirim</button>
+                <button type="reset">Batal</button>
+                <p class="form-feedback" data-form-feedback aria-live="polite"></p>
+            </form>
+
+            <?php if (isset($_SESSION["kegiatan_nama"])): ?>
+                <article id="hasilKegiatan" class="submission-result" aria-live="polite">
+                    <h3>Data Rencana Kegiatan yang Dikirim</h3>
+                    <p><strong>Nama Kegiatan:</strong> <?= htmlspecialchars($_SESSION["kegiatan_nama"] ?? "", ENT_QUOTES, "UTF-8") ?></p>
+                    <p><strong>Kategori:</strong> <?= htmlspecialchars($_SESSION["kegiatan_kategori"] ?? "", ENT_QUOTES, "UTF-8") ?></p>
+                    <p><strong>Tanggal Pelaksanaan:</strong> <?= htmlspecialchars($_SESSION["kegiatan_tanggal"] ?? "", ENT_QUOTES, "UTF-8") ?></p>
+                    <p><strong>Lokasi:</strong> <?= htmlspecialchars($_SESSION["kegiatan_lokasi"] ?? "", ENT_QUOTES, "UTF-8") ?></p>
+                    <p><strong>Deskripsi:</strong> <?= nl2br(htmlspecialchars($_SESSION["kegiatan_deskripsi"] ?? "", ENT_QUOTES, "UTF-8")) ?></p>
+                </article>
+            <?php endif; ?>
+        </section>
 		<section id="contact">
 			<h2>Kontak</h2>
 
