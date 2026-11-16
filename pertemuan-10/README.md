@@ -36,3 +36,10 @@
 - F.1 Memasukkan Data via Insert: Berhasil menambahkan data pertama (Indra Heriansyah) melalui tab Insert phpMyAdmin dengan mengosongkan kolom id agar terisi otomatis oleh AUTO_INCREMENT.
 - F.2 Memasukkan Data via SQL INSERT: Berhasil menambahkan data kedua (Andi) menggunakan perintah DML INSERT INTO pada tab SQL.
 - F.3 & F.4 Pemeriksaan Data via Browse: Melalui tab Browse, kedua baris data tampil lengkap dengan id 1 dan 2 serta seluruh isi atribut sudah sesuai dengan ketentuan formulir P9.
+## G. Mengekspor Struktur dan Data Basis Data
+- G.1 & G.2 Pengaturan dan Proses Ekspor: Berhasil mengekspor basis data db_pwd_2611500012 menggunakan metode Quick dan format SQL. Berkas hasil ekspor db_pwd_2611500012.sql telah dipindahkan ke dalam direktori pertemuan-10\.
+- G.3 Pemeriksaan Berkas Ekspor SQL: Setelah diperiksa menggunakan VS Code, berkas db_pwd_2611500012.sql telah memuat definisi struktur tabel (CREATE TABLE tbl_kontak_2611500012) beserta 9 atributnya serta data awal (INSERT INTO) sesuai dengan yang tampil pada phpMyAdmin.
+
+## H. Pengujian Akhir
+- Seluruh tahapan analisis kebutuhan data, perancangan 9 kolom, pembuatan basis data dan tabel di phpMyAdmin, pemasukan data awal, serta ekspor ke berkas db_pwd_2611500012.sql telah selesai diuji dan berjalan sesuai instruksi modul P10.
+- Berkas pada direktori pertemuan-09\ tetap terjaga utuh tanpa perubahan.
