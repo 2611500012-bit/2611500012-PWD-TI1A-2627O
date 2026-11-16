@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Nov 16, 2026 at 02:36 AM
+-- Generation Time: Nov 16, 2026 at 02:46 AM
 -- Server version: 8.4.3
 -- PHP Version: 8.3.33
 
@@ -40,6 +40,14 @@ CREATE TABLE `tbl_kontak_2611500012` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
+-- Dumping data for table `tbl_kontak_2611500012`
+--
+
+INSERT INTO `tbl_kontak_2611500012` (`id`, `nama`, `email`, `semester`, `tanggal`, `jenis_pesan`, `minat`, `prodi`, `pesan`) VALUES
+(1, 'Indra Heriansyah', 'indra@example.com', 1, '2026-11-16', 'saran', 'HTML, CSS', 'TI', 'Belajar dasar basis data MySQL pada pertemuan 10.'),
+(2, 'Andi', 'andi@example.com', 2, '2026-11-16', 'pertanyaan', 'HTML, CSS', 'TI', 'Saya ingin belajar pemrograman web.');
+
+--
 -- Indexes for dumped tables
 --
 
@@ -57,7 +65,7 @@ ALTER TABLE `tbl_kontak_2611500012`
 -- AUTO_INCREMENT for table `tbl_kontak_2611500012`
 --
 ALTER TABLE `tbl_kontak_2611500012`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
