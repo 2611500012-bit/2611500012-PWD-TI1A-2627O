@@ -20,7 +20,19 @@
   3. email -> VARCHAR(255) untuk menyimpan alamat email.
   4. semester -> TINYINT untuk menyimpan angka semester.
   5. tanggal -> DATE untuk menyimpan tanggal kunjungan.
-  6. jenis_pesan -> VARCHAR(20) untuk menyimpan pilihan pertanyaan atau saran.
+  6. jenis_pesan -> VARCHAR(20) untuk 
+  ## E. Membuat Basis Data dan Tabel Menggunakan phpMyAdmin
+- E.1 & E.2 Pembuatan Basis Data: Berhasil membuat basis data db_pwd_2611500012 melalui menu Databases pada phpMyAdmin dengan collation bawaan.
+- E.3 & E.4 Pembuatan Tabel dan Kolom: Berhasil membuat tabel tbl_kontak_2611500012 dengan 9 kolom (id, nama, email, semester, tanggal, jenis_pesan, minat, prodi, pesan). Kolom id ditetapkan sebagai PRIMARY KEY dengan AUTO_INCREMENT.
+- E.5 & E.6 Pemeriksaan Struktur dan DDL: Memahami perintah DDL CREATE DATABASE, USE, dan CREATE TABLE yang merepresentasikan struktur tabel. Hasil pengecekan melalui tab Structure dan perintah DESCRIBE tbl_kontak_2611500012 sudah sesuai dengan rancangan pada Bagian D.menyimpan pilihan pertanyaan atau saran.
   7. minat -> VARCHAR(50) untuk menyimpan pilihan topik yang dipisahkan koma.
   8. prodi -> VARCHAR(2) untuk menyimpan kode program studi (SI atau TI).
   9. pesan -> VARCHAR(300) untuk menyimpan isi pesan (maksimal 300 karakter).
+  ## E. Membuat Basis Data dan Tabel Menggunakan phpMyAdmin
+- E.1 & E.2 Pembuatan Basis Data: Berhasil membuat basis data db_pwd_2611500012 melalui menu Databases pada phpMyAdmin dengan collation bawaan.
+- E.3 & E.4 Pembuatan Tabel dan Kolom: Berhasil membuat tabel tbl_kontak_2611500012 dengan 9 kolom (id, nama, email, semester, tanggal, jenis_pesan, minat, prodi, pesan). Kolom id ditetapkan sebagai PRIMARY KEY dengan AUTO_INCREMENT.
+- E.5 & E.6 Pemeriksaan Struktur dan DDL: Memahami perintah DDL CREATE DATABASE, USE, dan CREATE TABLE yang merepresentasikan struktur tabel. Hasil pengecekan melalui tab Structure dan perintah DESCRIBE tbl_kontak_2611500012 sudah sesuai dengan rancangan pada Bagian D.
+## F. Memasukkan dan Memeriksa Data Awal
+- F.1 Memasukkan Data via Insert: Berhasil menambahkan data pertama (Indra Heriansyah) melalui tab Insert phpMyAdmin dengan mengosongkan kolom id agar terisi otomatis oleh AUTO_INCREMENT.
+- F.2 Memasukkan Data via SQL INSERT: Berhasil menambahkan data kedua (Andi) menggunakan perintah DML INSERT INTO pada tab SQL.
+- F.3 & F.4 Pemeriksaan Data via Browse: Melalui tab Browse, kedua baris data tampil lengkap dengan id 1 dan 2 serta seluruh isi atribut sudah sesuai dengan ketentuan formulir P9.
